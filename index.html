@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  
+</head>
+<body>
+
+
+<div class="topcard card">
+  <span class="dot"></span>
+  <span class="empty"> </span>
+  <span class="cardname">Jane Appleseed</span>
+  <span class="cardnumber">0000 0000 0000 0000</span>
+  <span class="expdate">00</span>
+  <span class="slash">/</span>
+  <span class="expdate1">00</span>
+</div>
+
+<div class="downcard card">
+  <span class="cvc-down">000</span>
+</div>
+
+ <section class="main">
+    <img src="./images/bg-main-desktop.png" alt="alt" class="desktop-top">
+    <img src="./images/bg-main-mobile.png" alt="alt-mobile" class="mobile-top hidden">
+    
+    <container class="right">
+      
+      <div class="form">
+        <div class="name">
+          <label for="name-input">CARDHOLDER NAME</label>
+          <input type="text" name="" id="name-input" placeholder="e.g. Jane Appleseed" maxlength="50">
+          <p class="error hidden">eroare</p>
+        </div>
+      
+        <div class="number">
+          <label for="number-input">CARD NUMBER</label>
+          <input type="text" name="" id="number-input" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+          <p class="error hidden">eroare</p>
+        </div>
+      
+        <div class="lower">
+          <div class="date">
+            <label for="exp-input">EXP. DATE (MM/YY)</label>
+          <div class="exp-inputs">
+            <input type="text" name="" id="exp-input" placeholder="MM" maxlength="2">
+          
+            <input type="text" name="" id="exp-input1" placeholder="YY" maxlength="2">
+           
+          </div>
+         <p class="error hidden">eroare</p>
+        </div>
+        
+        <div class="cvc">
+          <label for="cvc-input">CVC</label>
+          <input type="text" name="" id="cvc-input" placeholder="e.g. 123" maxlength="3">
+          <p class="error hidden">eroare</p>
+        </div>
+      </div>
+     
+      <button class="confirm ">Confirm</button>
+      </div>
+
+      <div class="done hidden">
+        <img class="doneimg" src="./images/icon-complete.svg" alt="done">
+        <h1 class="thanks">THANK YOU!</h1>
+        <p class="done-text">We've added your card details</p>
+        <button id="continue-btn">Continue</button>
+      </div>
+      
+   
+    </container>
+ 
+  </section>
+  
+  
+  
+</body>
+<script src="index.js"></script>
+</html>
