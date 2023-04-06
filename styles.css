@@ -7,10 +7,12 @@
 
     /*border: 1px solid black;*/
 }
+
+
 .main{
     display: flex;
 
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -66,9 +68,7 @@ input{
     caret-color: hsl(278, 68%, 11%);
     outline: none;
 }
-.card{
-    box-shadow: 10px 9px 19px 8px rgba(0,0,0,0.75);
-}
+
 input:focus{
     border: 2px solid hsl(278, 68%, 11%);
 }
@@ -84,13 +84,15 @@ input:focus{
 }
 
 button{
-    height: 50px;
+    height: fit-content;
     border-radius:10px ;
     border: none;
     color: white;
     font-size: 18px;
     cursor: pointer;
     background-color: hsl(278, 68%, 11%);
+    padding: 10px 0px;
+    
 }
 button:active{
     background-color: hsl(279, 50%, 32%);
@@ -204,7 +206,7 @@ label{
     font-size: 14px;
 }
 .mobile-top{
-    width: 1000px;
+    width: 100vw;
 }
 
 input::-webkit-outer-spin-button,
@@ -264,17 +266,19 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
     }
     .topcard{
+        display: block;
         width: 370px;
         height: 220px;
-        left: 5%;
+        left: 10%;
         z-index: 2;
     
     }
     .downcard{
+        display: block;
         width: 370px;
         height: 220px;
         top: 7%;
-        left: 15%;
+        left: 35%;
         z-index: 1;
     
     }
@@ -297,4 +301,20 @@ input::-webkit-inner-spin-button {
 
 .red{
     border: 1px solid red;
+}
+@media (max-width:577px){
+    .card{
+        scale: 0.7;
+    }
+    .card{
+        left: 0.5%;
+    }
+}
+@media (max-width:320px){
+    .card{
+        scale: 0.6;
+    }
+    .card{
+       left: -30px;
+    }
 }
