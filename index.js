@@ -96,7 +96,12 @@ function validareData(){
         ok[2]=0;
         return false;
     }else{errori[2].classList.add('hidden'); ok[2]=1; }
-    
+    if(expInput1.value>2999){
+        errori[2].innerHTML = errors.date;
+        errori[2].classList.remove('hidden');
+        ok[2]=0;
+        return false;
+    }else{errori[2].classList.add('hidden'); ok[2]=1; }
     if(!expInput1.value){
         errori[2].innerHTML = errors.empty;
         errori[2].classList.remove('hidden');
